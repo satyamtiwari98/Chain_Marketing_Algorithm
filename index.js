@@ -11,7 +11,7 @@ var totalMembers = document.getElementById('totalMembers')
 var parent = prompt("Enter Parent's Name :- ")
 
 
-if(parent=='' || parent==null ) {
+if(parent=='' || parent==null || parent.trim() == '') {
 
     alert("Try Again!!!")
     window.location.reload()
