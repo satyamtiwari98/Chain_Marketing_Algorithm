@@ -26,14 +26,20 @@ if(yesORno == 'y'||yesORno == 'Y') {
     var names = arrOfNames.split(',')
 
     var childs = names.length
+    for(let index=0;index<names.length;index++){
+        if(names[index]==''){
+        childs=childs-1
+        }
+    }
 
     parentsCommission = (joiningAmount*(10/100)*childs)
 
 
     for (let index = 0; index < names.length; index++) {
         if(names[index]==''){
-            childs=childs-1
+
             continue
+
         }else{
 
         var tag = document.createElement("h3");
