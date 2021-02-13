@@ -5,6 +5,7 @@ var parentsCommission = 0
 var resultParent = document.getElementById('resultParent')
 var heading = document.getElementById('heading')
 var result = document.getElementById('result')
+var totalMembers = document.getElementById('totalMembers')
 
 
 var parent = prompt("Enter Parent's Name :- ")
@@ -29,7 +30,7 @@ if(yesORno == 'y'||yesORno == 'Y') {
 
 
     heading.style.display = "block"
-
+    totalMembers.innerHTML = "Total Members :- "+childs
 
     resultParent.innerHTML = parent+" : "+parentsCommission+"<br>"
 
