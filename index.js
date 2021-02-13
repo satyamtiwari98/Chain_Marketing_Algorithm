@@ -1,4 +1,5 @@
 // Chain Marketing Algorithm
+
 var joiningAmount = 5000
 var parentsCommission = 0
 var resultParent = document.getElementById('resultParent')
@@ -7,9 +8,9 @@ var result = document.getElementById('result')
 
 
 var parent = prompt("Enter Parent's Name :- ")
-console.log(parent)
 
-if(parent=='') {
+
+if(parent==''|| parent==null) {
 
     alert("Try Again!!!")
 
