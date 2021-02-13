@@ -11,9 +11,10 @@ var totalMembers = document.getElementById('totalMembers')
 var parent = prompt("Enter Parent's Name :- ")
 
 
-if(parent==''|| parent==null) {
+if(parent=='' || parent==null ) {
 
     alert("Try Again!!!")
+    window.location.reload()
 
 }else {
 
@@ -55,6 +56,7 @@ if(yesORno == 'y'||yesORno == 'Y') {
 }else {
 
     alert("Please enter a valid input!!!!")
+    window.location.reload()
 
 }
 
