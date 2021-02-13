@@ -27,7 +27,7 @@ if(yesORno == 'y'||yesORno == 'Y') {
 
     var childs = names.length
 
-    parentsCommission = (joiningAmount*(10/100))+(joiningAmount*(5/100)*childs)
+    parentsCommission = (joiningAmount*(10/100)*childs)
 
 
     heading.style.display = "block"
