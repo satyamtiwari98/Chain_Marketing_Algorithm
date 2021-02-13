@@ -30,20 +30,27 @@ if(yesORno == 'y'||yesORno == 'Y') {
     parentsCommission = (joiningAmount*(10/100)*childs)
 
 
+    for (let index = 0; index < names.length; index++) {
+        if(names[index]==''){
+            childs=childs-1
+            continue
+        }else{
+
+        var tag = document.createElement("h3");
+        var text = document.createTextNode(names[index]+" : "+joiningAmount*(5/100));
+        tag.appendChild(text);
+        result.appendChild(tag);
+        }
+        
+    }
+
+
     heading.style.display = "block"
     totalMembers.innerHTML = "Total Members :- "+childs
 
     resultParent.innerHTML = parent+" : "+parentsCommission+"<br>"
 
 
-    for (let index = 0; index < names.length; index++) {
-
-        var tag = document.createElement("h3");
-        var text = document.createTextNode(names[index]+" : "+joiningAmount*(5/100));
-        tag.appendChild(text);
-        result.appendChild(tag);
-        
-    }
 
 
 }else if(yesORno == 'n'||yesORno == 'N') {
